@@ -1,0 +1,230 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #f8f9fa;
+    background-image: url('bsaura/bascimg/login.png');
+    background-size: cover;
+    margin: 0;
+}
+
+.navbar-laravel {
+    background: linear-gradient(to bottom, #7ca875, #0e240c);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 120px;
+}
+
+.navbar-brand {
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+
+.navbar-light .navbar-toggler-icon {
+    color: white;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;  
+    
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    text-decoration: underline;
+}
+
+.logoimg,
+.calogoi {
+    width: 100px;
+    height: 100%;
+    z-index: 1;
+}
+
+.calogoi {
+    margin-left: 15px;
+    position: absolute;
+    left: 40px;
+    z-index: 2;
+}
+
+.logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.login-form {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px; /* Add padding to the sides for better readability */
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: auto; /* Instead of a fixed height */
+}
+
+.card-header {
+    background-color: #f4f4f4;
+    color: #12694f;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-control {
+    border: 1px solid #010101;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+border-radius: 5px;
+/* Set your desired border radius */
+padding: 8px;
+/* Adjust padding as needed */
+}
+        
+input[type="submit"] {
+background-color: #12694f;
+/* Set your desired background color */
+color: #fff;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+margin-bottom: 10px;
+/* Set your desired border radius */
+cursor: pointer;
+transition: background-color 0.3s;
+/* Add smooth transition for hover effect */
+}
+        
+input[type="submit"]:hover {
+background-color: #0d4a35;
+/* Set your desired hover color */
+}
+#togglePassword {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.btn-link {
+    color: #12694f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+}
+
+.image-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.image-container img {
+    display: inline-block;
+} 
+/* Media Queries for Responsive Design */
+
+@media screen and (max-width: 1200px) {
+    .navbar-brand {
+        font-size: 40px;
+    }
+
+    .logoimg,
+    .calogoi {
+        width: 80px;
+    }
+
+    .calogoi {
+        left: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 992px) {
+    .navbar-brand {
+        font-size: 30px;
+    }
+
+    .logoimg,
+    .calogoi {
+        width: 60px;
+    }
+
+    .calogoi {
+        left: 10px;
+    }
+    .navbar-nav .nav-item .nav-link {
+        font-weight: bold;
+        color: #ffffff;
+        text-decoration: none; 
+        margin-left: 660px; 
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-laravel {
+        background: linear-gradient(to right, #0e240c, #7ca875);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        height: 110px;
+    }
+    .navbar-brand {
+        font-size: 24px;
+        margin-right: 50px;
+    }
+
+    .logoimg,
+    .calogoi {
+        width: 60px;
+    }
+
+    .calogoi {
+        left: 5px;
+    }
+    .navbar-nav .nav-item .nav-link {
+        font-weight: bold;
+        color: #ffffff;
+        text-decoration: none; 
+        margin-left: 290px; 
+        text-align: center;
+        margin-top: 5px;
+    }
+    .login-form {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 20px; /* Add padding to the sides for better readability */
+    }
+}
+
